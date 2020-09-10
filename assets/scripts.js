@@ -20,14 +20,14 @@ function generatePassword(){
   var whichCase = confirm("Uppercase letters?");
   var num = confirm("Numbers in your password?");
   
-  // This creates a local variable for the password instead of getting the DOM object with id="password"
+  // Creates a local variable for the password 
   let password = '';
 
   console.log(charLength);
   console.log(whichCase);
   console.log(num);
 
-  // if uppercase and numbers are confirmed
+  // Uppercase and numbers?
   if(num === true && whichCase === true){
     for(var i = 0; i <charLength; i++){
 
@@ -38,7 +38,7 @@ function generatePassword(){
 
     }
   }  
-//if uppercase but no numbers
+//Uppercase but no numbers?
     else if(num != true && whichCase === true){
       for(var i = 0; i <charLength; i++){
 
@@ -49,7 +49,7 @@ function generatePassword(){
 
     }
   }
-// numbers no uppercase
+//Numbers no uppercase?
     else if(num === true && whichCase != true){
       for(var i = 0; i <charLength; i++){
 
